@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "262514640745",
+    "firebase_url": "https://stockmanager-256914.firebaseio.com",
+    "project_id": "stockmanager-256914",
+    "storage_bucket": "stockmanager-256914.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262514640745:android:555abac843d6fb4e301ff8",
+        "android_client_info": {
+          "package_name": "com.ghost2911.stockmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262514640745-rg63kb5vvu4qlgs8n1jm0o9r88j2h537.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ghost2911.stockmanager",
+            "certificate_hash": "c79664e27a3d65125531e607323ca14a90edf0e9"
+          }
+        },
+        {
+          "client_id": "262514640745-5t9refb530ofk7k1daokjbesmqqdolt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByGNYknHWE3swuLcZzYgZZeBhl0M1NWy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262514640745-5t9refb530ofk7k1daokjbesmqqdolt4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

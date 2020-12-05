@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".EditProductActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="10pt"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:maxImageSize="30dp"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10pt"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:maxImageSize="30dp"
+        app:srcCompat="@drawable/ic_check" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7pt"
+            android:background="@drawable/rectangle_round"
+            android:orientation="vertical"
+            android:padding="3pt">
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="100pt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Название:"
+                android:textAllCaps="false"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Описание:"
+                android:textAllCaps="false"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="Цена:"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="Количество:"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10pt"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/etCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Штрих-код:"
+                android:textAllCaps="false"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etBarcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10pt"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/btnScanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_weight="5"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/darker_gray"
+                    app:srcCompat="@drawable/ic_camera" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Место хранения:"
+                android:textAllCaps="false"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etStorage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10pt"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/btnStorage"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:background="@android:color/darker_gray"
+                    app:srcCompat="@drawable/ic_storage_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Аналоги"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etAnalog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="200pt" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

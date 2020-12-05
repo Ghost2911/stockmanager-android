@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="40pt"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="38dp"
+            android:layout_height="36dp"
+            android:layout_margin="3pt"
+            app:srcCompat="@drawable/ic_item_row" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="25pt"
+            android:layout_marginTop="3pt"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="Название товара"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="10pt"
+            android:layout_marginBottom="3pt"
+            android:layout_weight="3"
+            android:textAlignment="viewStart"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="3pt"
+            android:layout_marginRight="3pt"
+            android:layout_weight="32"
+            android:textAlignment="viewEnd"
+            android:textAllCaps="true"
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="match_parent"
+            android:layout_height="10pt"
+            android:layout_marginRight="3pt"
+            android:layout_marginBottom="3pt"
+            android:layout_weight="5"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textColor="#3F51B5"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

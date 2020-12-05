@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Склад</string>
+    <string name="nav_header_title">Учет товаров</string>
+    <string name="action_settings">Импорт с телефона</string>
+
+    <string name="menu_upload">Выгрузить базу в облако</string>
+    <string name="menu_update_adapter">Вывести данные</string>
+    <string name="menu_clear">Очистить базу</string>
+    <string name="menu_load">Скачать базу из облака</string>
+    <string name="title_activity_edit_product">EditProductActivity</string>
+</resources>
